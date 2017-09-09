@@ -1,3 +1,12 @@
+<div id="new-info">
+  <h2>新着情報</h2>
+  <ul>
+  <% @items.each do |item| %>
+    <li>寺名：<%= item.temple_name %>,品目:<%= item.name %>,金額:<%= item.price %>円</li>
+  <% end %>
+  </ul>
+</div>
+
 <div id="map" data-lat="34.985849" data-lng="135.758767" style="height: 500px;">
 </div>
 
